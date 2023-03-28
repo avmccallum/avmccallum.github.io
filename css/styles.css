@@ -135,6 +135,7 @@ nav a {
 .card-link {
     text-decoration: none;
     color: #1c1c1c;
+    margin-bottom: 2em;
 }
 
 .card-link:hover, .card-link:hover p {
