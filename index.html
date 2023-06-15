@@ -17,96 +17,147 @@
 </head>
 
 <body>
+  <div class="body-bg" >
+    <img class="body-bg-img" src="assets/water.gif">
     <header>
         <div class="container col-xxl-8 px-4 py-5">
             <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
-            <div class="col-10 col-sm-8 col-lg-6">
-                <div class="header-img">
-                    <img src="assets/amccallum_2.jpg" class="d-block mx-lg-auto img-fluid" alt="image of a woman" width="400" loading="lazy">
+            
+                <div class="col-lg-6">
+                    <h1 class="display-5 fw-bold lh-1 mb-3">Ashley McCallum</h1>
+                    <p class="lead"><br>Full stack developer, UI designer <br>Based in Windsor, Ontario</p>
+                    <div class="about-info col-10">
+                        <h4>Mobile Applications Development - Advanced Diploma</h4>
+                        <p>St. Clair College, 2020 - 2023</p>
+                        <h4>Peer Tutor</h4>
+                        <p>St. Clair College, 2021 - 2022<br><span>Focusing on PHP, JavaScript, Java, and Swift</span></p>
+                        <h4>Student Advisor</h4>
+                        <p>WEtech Alliance Board of Directors, 2022 - 2023</p>
+                    </div>
                 </div>
-            </div>
-            <div class="col-lg-6">
-                <h1 class="display-5 fw-bold lh-1 mb-3">Hi, I'm Ashley</h1>
-                <p class="lead"><br>Full stack developer <br>Based in Windsor, Ontario</p>
-            </div>
+                
+                <div class="col-10 col-sm-8 col-lg-6">
+                    <div class="header-img">
+                        <img src="assets/amccallum_2.jpg" class="d-block mx-lg-auto img-fluid" alt="image of a woman" width="400" loading="lazy">
+                    </div>
+                </div>
+                
             </div>
         </div>
     </header>
+    <section class="contact">
+        <button class="btn btn-primary contact-btn" type="button" data-bs-toggle="offcanvas" data-bs-target="#resumeOffcanvas" aria-controls="resumeOffcanvas">
+            Contact Me
+          </button>
+          
+          <div class="offcanvas offcanvas-end show" data-bs-scroll="true" data-bs-backdrop="false" tabindex="-1" id="resumeOffcanvas" aria-labelledby="resumeOffcanvasLabel">
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title contact-title" id="resumeOffcanvasLabel">Contact Me</h5>
+              <button type="button contact-close" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+              <div>
+                <a class="btn btn-primary resume-btn" href="https://drive.google.com/file/d/14KHCOSbk0ggNjz4UxISVRgYWvRjnatGw/view?usp=sharing" role="button">View Resume</a></p>
+                <div class="col-md-12 d-flex align-items-center justify-content-center mb-3 mb-md-0 me-md-auto">
+                    <a href="https://github.com/avmccallum" >
+                        <img src="assets/github-logo.png" alt="GitHub logo" class="footer-img">
+                    </a>
+                    <a href="https://www.linkedin.com/in/ashleyvmccallum/">
+                        <img src="assets/linkedin-logo.png" alt="LinkedIn Logo" class="footer-img">
+                    </a>
+                </div>
+                <div class="contact-bg"></div>
+              </div>
+            </div>
+          </div>
+    </section>
+    <section class="themes">
+        <button class="btn btn-primary theme-btn" type="button" data-bs-toggle="offcanvas" data-bs-target="#themeOffcanvas" aria-controls="themeOffcanvas">
+            Select a Theme
+          </button>
+          
+          <div class="offcanvas offcanvas-start" data-bs-scroll="false" data-bs-backdrop="true" tabindex="-1" id="themeOffcanvas" aria-labelledby="themeOffcanvasLabel">
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title" id="themeOffcanvasLabel">Select a Theme</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+              <div>
+                Themes coming soon!
+              </div>
+            </div>
+          </div>
+    </section>
+    <!-- <section>
+        <div class="container">
+            <div class="row justify-content-start align-items-center"> -->
+                <!-- <div class="about-list col-6">
+                    <div class="row justify-content-start skill-group">
+                        <h4>Languages</h4>
+                        <div class="skill col-md-auto"><p>Java</p><div class="circle"></div><div class="edge"></div></div>
+                        <div class="skill col-md-auto"><p>Kotlin</p><div class="circle"></div><div class="edge"></div></div>
+                        <div class="skill col-md-auto"><p>C#</p><div class="circle"></div><div class="edge"></div></div>
+                        <div class="skill col-md-auto"><p>Dart</p><div class="circle"></div><div class="edge"></div></div>
+                        <div class="skill col-md-auto"><p>JavaScript</p><div class="circle"></div><div class="edge"></div></div>
+                        <div class="skill col-md-auto"><p>TypeScript</p><div class="circle"></div><div class="edge"></div></div>
+                        <div class="skill col-md-auto"><p>Swift</p><div class="circle"></div><div class="edge"></div></div>
+                    </div>
+
+                    <div class="row justify-content-start skill-group">
+                        <h4>Frameworks</h4>
+                        <div class="skill col-md-auto"><p>Angular</p><div class="circle"></div><div class="edge"></div></div>
+                        <div class="skill col-md-auto"><p>Laravel</p><div class="circle"></div><div class="edge"></div></div>
+                        <div class="skill col-md-auto"><p>Flutter</p><div class="circle"></div><div class="edge"></div></div>
+                        <div class="skill col-md-auto"><p>Bootstrap</p><div class="circle"></div><div class="edge"></div></div>
+                    </div>
+                    
+                    <div class="row justify-content-start skill-group">
+                        <h4>Professional Skills</h4>
+                        <div class="skill col-md-auto"><p>Clear Communication</p><div class="circle"></div><div class="edge"></div></div>
+                        <div class="skill col-md-auto"><p>Teamwork</p><div class="circle"></div><div class="edge"></div></div>
+                        <div class="skill col-md-auto"><p>Organization</p><div class="circle"></div><div class="edge"></div></div>
+                        <div class="skill col-md-auto"><p>Creativity</p><div class="circle"></div><div class="edge"></div></div>
+                        <div class="skill col-md-auto"><p>Problem Solving</p><div class="circle"></div><div class="edge"></div></div>
+                    </div>
+                </div> -->
+
+                
+                
+            <!-- </div>
+        </div>
+    </section> -->
     <section>
         <nav>
-            <div class="nav nav-tabs col-md-12 d-flex align-items-center justify-content-center mb-3 mb-md-0 me-md-auto" id="nav-tab" role="tablist">
-                <button class="nav-link tab active" id="nav-about-tab" data-bs-toggle="tab" data-bs-target="#nav-about"
-                type="button" role="tab" aria-controls="nav-about" aria-selected="true">About</button>
-                <button class="nav-link tab" id="nav-projects-tab" data-bs-toggle="tab" data-bs-target="#nav-projects" type="button"
-                role="tab" aria-controls="nav-projects" aria-selected="false">Projects</button>
-                <a href="mailto:a.v.mccallum@gmail.com" class="contact-link"><button class="nav-link"  type="button" aria-selected="false">Contact</button></a>
+            <div class="nav nav-tabs col-md-12 d-flex justify-content-center" id="nav-tab" role="tablist">
+                <button class="nav-link active" id="nav-projects-tab" data-bs-toggle="tab" data-bs-target="#nav-projects" type="button"
+                role="tab" aria-controls="nav-projects" aria-selected="true">Projects</button>
+                <div class="vr"></div>
+                <button class="nav-link" id="nav-prototypes-tab" data-bs-toggle="tab" data-bs-target="#nav-prototypes" type="button"
+                role="tab" aria-controls="nav-prototypes" aria-selected="false">Prototypes</button>
             </div>
         </nav>
-        <div class="tab-content" id="nav-tabContent">
-            <!-- about tab-->
-            <div class="tab-pane fade show active" id="nav-about" role="tabpanel" aria-labelledby="nav-about-tab"
-                tabindex="0">
-                <div class="container">
-                    <div class="row justify-content-start align-items-center">
-                        <div class="about-list col-6">
-                            <div class="row justify-content-start skill-group">
-                                <h4>Languages</h4>
-                                <div class="skill col-md-auto"><p>Java</p><div class="circle"></div><div class="edge"></div></div>
-                                <div class="skill col-md-auto"><p>Kotlin</p><div class="circle"></div><div class="edge"></div></div>
-                                <div class="skill col-md-auto"><p>C#</p><div class="circle"></div><div class="edge"></div></div>
-                                <div class="skill col-md-auto"><p>Dart</p><div class="circle"></div><div class="edge"></div></div>
-                                <div class="skill col-md-auto"><p>JavaScript</p><div class="circle"></div><div class="edge"></div></div>
-                                <div class="skill col-md-auto"><p>TypeScript</p><div class="circle"></div><div class="edge"></div></div>
-                                <div class="skill col-md-auto"><p>Swift</p><div class="circle"></div><div class="edge"></div></div>
-                            </div>
-
-                            <div class="row justify-content-start skill-group">
-                                <h4>Frameworks</h4>
-                                <div class="skill col-md-auto"><p>Angular</p><div class="circle"></div><div class="edge"></div></div>
-                                <div class="skill col-md-auto"><p>Laravel</p><div class="circle"></div><div class="edge"></div></div>
-                                <div class="skill col-md-auto"><p>Flutter</p><div class="circle"></div><div class="edge"></div></div>
-                                <div class="skill col-md-auto"><p>Bootstrap</p><div class="circle"></div><div class="edge"></div></div>
-                            </div>
-                            
-                            <div class="row justify-content-start skill-group">
-                                <h4>Professional Skills</h4>
-                                <div class="skill col-md-auto"><p>Clear Communication</p><div class="circle"></div><div class="edge"></div></div>
-                                <div class="skill col-md-auto"><p>Teamwork</p><div class="circle"></div><div class="edge"></div></div>
-                                <div class="skill col-md-auto"><p>Organization</p><div class="circle"></div><div class="edge"></div></div>
-                                <div class="skill col-md-auto"><p>Creativity</p><div class="circle"></div><div class="edge"></div></div>
-                                <div class="skill col-md-auto"><p>Problem Solving</p><div class="circle"></div><div class="edge"></div></div>
-                            </div>
-                        </div>
-
-                        <div class="about-info col-6">
-                            <h4>Mobile Applications Development - Advanced Diploma</h4>
-                            <p>St. Clair College, 2020 - 2023</p>
-                            <h4>Peer Tutor</h4>
-                            <p>St. Clair College, 2021 - 2022<br><span>Focusing on PHP, JavaScript, Java, and Swift</span></p>
-                            <h4>Student Advisor</h4>
-                            <p>WEtech Alliance Board of Directors, 2022 - 2023</p>
-                        </div>
-                        <p class="text-center resume"><a href="https://drive.google.com/file/d/1bt0JaqSOfBMbu-e43LCyV9xriY5sguIJ/view?usp=sharing">View my resume!</a></p>
-                    </div>
-                </div>
-            </div>
+        <div class="tab-content d-flex justify-content-center" id="nav-tabContent">
             <!-- projects tab -->
-            <div class="tab-pane fade" id="nav-projects" role="tabpanel" aria-labelledby="nav-projects-tab" tabindex="0">
-                <h2 class="text-center">School Projects</h2>
-                <div class="d-flex flex-wrap justify-content-center align-items-top py-3 my-4 px-4">
-                    <a href="https://github.com/avmccallum/TheBarkingLot" class="card-link">
+            <div class="tab-pane fade show active" id="nav-projects" role="tabpanel" aria-labelledby="nav-projects-tab" tabindex="0">
+                <div class="d-flex flex-column">
+                    <a href="https://github.com/avmccallum/TheBarkingLot" class="card-link d-flex justify-content-center">
 
-                        <div class="card mb-3" style="max-width: 700px;">
-                            <div class="row g-0">
-                              <div class="col-md-4">
+                        <div class="card" >
+                            <div class="row g-0 align-items-center">
+                              <div class="col-md-3 ">
                                 <img src="assets/barking-lot.png" class="img-fluid rounded-start" alt="screen shot of a login screen">
                               </div>
-                              <div class="col-md-8">
+                              <div class="col-md-9">
                                 <div class="card-body">
                                     <h3>The Barking Lot</h3>
-                                    <p class="card-text">Built as a solo project, this app is for a fictional pet rescue. It provides information on animal care resources, and has a quiz to match the user to a pet that will fit thier lifestyle.</p>
+                                    <p class="card-text">This app is for a fictional pet rescue. It provides information on animal care resources, and has a quiz to match the user to a pet that will fit their lifestyle.</p>
                                 </div>
-                                <ul class="list-group list-group-flush">
+                                <div class="row justify-content-start skill-group">                                    
+                                    <div class="skill col-md-auto"><p>Android Studio</p><div class="circle"></div><div class="edge"></div></div>
+                                    <div class="skill col-md-auto"><p>Git &amp; GitHub</p><div class="circle"></div><div class="edge"></div></div>
+                                    <div class="skill col-md-auto"><p>Java</p><div class="circle"></div><div class="edge"></div></div>
+                                </div>
+                                <!-- <ul class="list-group list-group-flush">
                                     <li class="list-group-item">
                                         <h4>Project Focus</h4>
                                         <p>Layouts in Android Studio, version control</p>
@@ -115,24 +166,31 @@
                                         <h4>Relevant Skills</h4>
                                         <p>Java, Android Studio</p>
                                     </li>
-                                </ul>
+                                </ul> -->
                               </div>
                             </div>
                         </div>
                     </a>
-                    <a href="https://github.com/avmccallum/TheLoreStore" class="card-link">
+                    <a href="https://github.com/avmccallum/TheLoreStore" class="card-link d-flex justify-content-center">
 
-                        <div class="card mb-3" style="max-width: 700px;">
-                            <div class="row g-0">
-                              <div class="col-md-4">
+                        <div class="card">
+                            <div class="row g-0 align-items-center">
+                              <div class="col-md-3">
                                 <img src="assets/book_tracker.png" class="img-fluid rounded-start" alt="screen shot of a login screen">
                               </div>
-                              <div class="col-md-8">
+                              <div class="col-md-9">
                                 <div class="card-body">
                                     <h3>Book Tracker</h3>
-                                    <p class="card-text">Built as a two person partner project, this program allows users to store information for books including genre, author, and publisher.</p>
+                                    <p class="card-text">This app allows users to store information for their book collection including genre, author, and publisher.</p>
                                 </div>
-                                <ul class="list-group list-group-flush">
+                                <div class="row justify-content-start skill-group">                                    
+                                    <div class="skill col-md-auto"><p>Database Creation &amp; Querying</p><div class="circle"></div><div class="edge"></div></div>
+                                    <div class="skill col-md-auto"><p>Git &amp; GitHub</p><div class="circle"></div><div class="edge"></div></div>
+                                    <div class="skill col-md-auto"><p>Java</p><div class="circle"></div><div class="edge"></div></div>
+                                    <div class="skill col-md-auto"><p>JavaFX</p><div class="circle"></div><div class="edge"></div></div>
+                                    <div class="skill col-md-auto"><p>MySQL</p><div class="circle"></div><div class="edge"></div></div>
+                                </div>
+                                <!-- <ul class="list-group list-group-flush">
                                     <li class="list-group-item">
                                         <h4>Project Focus</h4>
                                         <p>Database creation and querying, version control</p>
@@ -141,24 +199,32 @@
                                         <h4>Relevant Skills</h4>
                                         <p>Java, JavaFX, MySQL</p>
                                     </li>
-                                </ul>
+                                </ul> -->
                               </div>
                             </div>
                         </div>
                     </a>
-                    <a href="https://github.com/avmccallum/MADimalCrossings" class="card-link">
+                    <a href="https://github.com/avmccallum/MADimalCrossings" class="card-link d-flex justify-content-center">
 
-                        <div class="card mb-3" style="max-width: 700px;">
-                            <div class="row g-0">
-                              <div class="col-md-4">
+                        <div class="card">
+                            <div class="row g-0 align-items-center">
+                              <div class="col-md-3">
                                 <img src="assets/acnh_app.png" class="img-fluid rounded-start" alt="screen shot from an app">
                               </div>
-                              <div class="col-md-8">
+                              <div class="col-md-9">
                                 <div class="card-body">
                                     <h3>ACNH Compendium App (Android)</h3>
-                                    <p class="card-text">Built as a two person partner project, this app allows users to view information on villagers from Animal Crossing: New Horizons and organize them into custom lists. Users can also view and listen to KK Slider music and play BINGO.</p>
+                                    <p class="card-text">This app allows users to view information on villagers from Animal Crossing: New Horizons and organize them into custom lists. Users can also view and listen to KK Slider music and play BINGO.</p>
                                 </div>
-                                <ul class="list-group list-group-flush">
+                                <div class="row justify-content-start skill-group">                                    
+                                    <div class="skill col-md-auto"><p>Database Creation &amp; Querying</p><div class="circle"></div><div class="edge"></div></div>
+                                    <div class="skill col-md-auto"><p>Git &amp; GitHub</p><div class="circle"></div><div class="edge"></div></div>
+                                    <div class="skill col-md-auto"><p>Use of APIs</p><div class="circle"></div><div class="edge"></div></div>
+                                    <div class="skill col-md-auto"><p>Java</p><div class="circle"></div><div class="edge"></div></div>
+                                    <div class="skill col-md-auto"><p>SQLite</p><div class="circle"></div><div class="edge"></div></div>
+                                    <div class="skill col-md-auto"><p>Android Studio</p><div class="circle"></div><div class="edge"></div></div>
+                                </div>
+                                <!-- <ul class="list-group list-group-flush">
                                     <li class="list-group-item">
                                         <h4>Project Focus</h4>
                                         <p>Local database creation and querying, use of APIs, version control</p>
@@ -167,24 +233,31 @@
                                         <h4>Relevant Skills</h4>
                                         <p>Java, SQLite, Android Studio</p>
                                     </li>
-                                </ul>
+                                </ul> -->
                               </div>
                             </div>
                           </div>                
                     </a>
-                    <a href="https://github.com/avmccallum/iOS-ACNH-Compendium" class="card-link">
+                    <a href="https://github.com/avmccallum/iOS-ACNH-Compendium" class="card-link d-flex justify-content-center">
 
-                        <div class="card mb-3" style="max-width: 700px;">
-                            <div class="row g-0">
-                              <div class="col-md-4">
+                        <div class="card" >
+                            <div class="row g-0 align-items-center">
+                              <div class="col-md-3">
                                 <img src="assets/acnh-ios.png" class="img-fluid rounded-start" alt="screen shot from an app">
                               </div>
-                              <div class="col-md-8">
+                              <div class="col-md-9">
                                 <div class="card-body">
                                     <h3>ACNH Compendium App (iOS)</h3>
-                                    <p class="card-text">Built as a solo project, this app allows users to view information on villagers from Animal Crossing: New Horizons and organize them into custom lists. Users can also toggle birthday reminders and play BINGO.</p>
+                                    <p class="card-text">This app allows users to view information on villagers from Animal Crossing: New Horizons and organize them into custom lists. Users can also toggle birthday reminders and play BINGO.</p>
                                 </div>
-                                <ul class="list-group list-group-flush">
+                                <div class="row justify-content-start skill-group">                                    
+                                    <div class="skill col-md-auto"><p>CoreData</p><div class="circle"></div><div class="edge"></div></div>
+                                    <div class="skill col-md-auto"><p>Notifications</p><div class="circle"></div><div class="edge"></div></div>
+                                    <div class="skill col-md-auto"><p>Use of APIs</p><div class="circle"></div><div class="edge"></div></div>
+                                    <div class="skill col-md-auto"><p>Swift</p><div class="circle"></div><div class="edge"></div></div>
+                                    <div class="skill col-md-auto"><p>XCode</p><div class="circle"></div><div class="edge"></div></div>
+                                </div>
+                                <!-- <ul class="list-group list-group-flush">
                                     <li class="list-group-item">
                                         <h4>Project Focus</h4>
                                         <p>Use of CoreData, notification handling, use of APIs</p>
@@ -193,71 +266,28 @@
                                         <h4>Relevant Skills</h4>
                                         <p>Swift, XCode</p>
                                     </li>
-                                </ul>
+                                </ul> -->
                               </div>
                             </div>
                           </div>                
                     </a>
-                </div>
-                <h2 class="text-center second-header">Professional Projects</h2>
-                <div class="d-flex flex-wrap justify-content-center align-items-top py-3 my-4">
-                    <a href="http://windsormaycourt.com/" class="card-link">
+                    <a href="http://windsormaycourt.com/" class="card-link d-flex justify-content-center">
 
-                        <div class="card mb-3" style="max-width: 700px;">
-                            <div class="row g-0">
-                              <div class="col-md-4">
+                        <div class="card" >
+                            <div class="row g-0 align-items-center">
+                              <div class="col-md-3">
                                 <img src="assets/maycourt.jpg" class="img-fluid rounded-start" alt="May Court Club logo">
                               </div>
-                              <div class="col-md-8">
+                              <div class="col-md-9">
                                 <div class="card-body">
                                     <h3>May Court Club Site</h3>
-                                    <p class="card-text">A website built for the charity organization May Court Club of Canada (Windsor location). Built in a team of three using Bootstrap.</p>
+                                    <p class="card-text">A website built for the charity organization May Court Club of Canada (Windsor location) using Bootstrap.</p>
                                 </div>
-                                <ul class="list-group list-group-flush">
-                                    <li class="list-group-item">
-                                        <h4>Relevant Skills</h4>
-                                        <p>Prototyping with Figma, Bootstrap, CSS, HTML5</p>
-                                    </li>
-                                </ul>
-                              </div>
-                            </div>
-                          </div>
-                    </a>
-                    <a href="https://amccallum.scweb.ca/scweb_test/index.html" class="card-link">
-                        <div class="card mb-3" style="max-width: 700px;">
-                            <div class="row g-0">
-                              <div class="col-md-4">
-                                <img src="assets/scweb.png" class="img-fluid rounded-start" alt="a screenshot of a website">
-                              </div>
-                              <div class="col-md-8">
-                                <div class="card-body">
-                                    <h3>St. Clair MAD Program Site</h3>
-                                    <p class="card-text">A website built for the mobile applications development program at St. Clair College. Built as a solo project using pure CSS and JavaScript.</p>
-                                </div>
-                                <ul class="list-group list-group-flush">
-                                    <li class="list-group-item">
-                                        <h4>Relevant Skills</h4>
-                                        <p>Prototyping with Photoshop, CSS, HTML5, JavaScript</p>
-                                    </li>
-                                </ul>
-                              </div>
-                            </div>
-                          </div>
-                    </a>
-                </div>
-                <h2 class="text-center second-header">Prototypes</h2>
-                <div class="d-flex flex-wrap justify-content-center align-items-top py-3 my-4">
-                    <a href="https://www.figma.com/file/ONuWCPBBeqh6ERZTJjjYm4/DP1-Group6-hifi-prototype?node-id=0%3A1&t=tmFvKotJGBPiGs28-1" class="card-link">
-
-                        <div class="card mb-3" style="max-width: 700px;">
-                            <div class="row g-0">
-                              <div class="col-md-4">
-                                <img src="assets/plant-hub.png" class="img-fluid rounded-start" alt="screenshot of an app prototype">
-                              </div>
-                              <div class="col-md-8">
-                                <div class="card-body">
-                                    <h3>PlantHub</h3>
-                                    <p class="card-text">A mobile app where users can gather plant information, talk to other users for advice, and track their plant care plan.</p>
+                                <div class="row justify-content-start skill-group">                                    
+                                    <div class="skill col-md-auto"><p>Prototyping</p><div class="circle"></div><div class="edge"></div></div>
+                                    <div class="skill col-md-auto"><p>Figma</p><div class="circle"></div><div class="edge"></div></div>
+                                    <div class="skill col-md-auto"><p>Bootstrap</p><div class="circle"></div><div class="edge"></div></div>
+                                    <div class="skill col-md-auto"><p>HTML5 &amp; CSS</p><div class="circle"></div><div class="edge"></div></div>
                                 </div>
                                 <!-- <ul class="list-group list-group-flush">
                                     <li class="list-group-item">
@@ -269,51 +299,127 @@
                             </div>
                           </div>
                     </a>
-                    <a href="https://www.figma.com/file/vdQnoote5gQySL7vYhgty6/iOS-Prototype?node-id=0%3A1&t=tmFvKotJGBPiGs28-1" class="card-link">
-                        <div class="card mb-3" style="max-width: 700px;">
-                            <div class="row g-0">
-                              <div class="col-md-4">
+                    <a href="https://amccallum.scweb.ca/scweb_test/index.html" class="card-link d-flex justify-content-center">
+                        <div class="card" >
+                            <div class="row g-0 align-items-center">
+                              <div class="col-md-3">
+                                <img src="assets/scweb.png" class="img-fluid rounded-start" alt="a screenshot of a website">
+                              </div>
+                              <div class="col-md-9">
+                                <div class="card-body">
+                                    <h3>St. Clair MAD Program Site</h3>
+                                    <p class="card-text">A website built for the mobile applications development program at St. Clair College using pure CSS and JavaScript.</p>
+                                </div>
+                                <div class="row justify-content-start skill-group">                                    
+                                    <div class="skill col-md-auto"><p>Prototyping</p><div class="circle"></div><div class="edge"></div></div>
+                                    <div class="skill col-md-auto"><p>Adobe Photoshop</p><div class="circle"></div><div class="edge"></div></div>
+                                    <div class="skill col-md-auto"><p>JavaScript</p><div class="circle"></div><div class="edge"></div></div>
+                                    <div class="skill col-md-auto"><p>HTML5 &amp; CSS</p><div class="circle"></div><div class="edge"></div></div>
+                                </div>
+                                <!-- <ul class="list-group list-group-flush">
+                                    <li class="list-group-item">
+                                        <h4>Relevant Skills</h4>
+                                        <p>Prototyping with Photoshop, CSS, HTML5, JavaScript</p>
+                                    </li>
+                                </ul> -->
+                              </div>
+                            </div>
+                          </div>
+                    </a>
+                    
+                </div>
+            </div>           
+            <!-- prototypes tab -->
+            <div class="tab-pane fade" id="nav-prototypes" role="tabpanel" aria-labelledby="nav-prototypes-tab" tabindex="0">
+              <div class="d-flex flex-column">
+                    <a href="https://www.figma.com/file/ONuWCPBBeqh6ERZTJjjYm4/DP1-Group6-hifi-prototype?node-id=0%3A1&t=tmFvKotJGBPiGs28-1" class="card-link d-flex justify-content-center">
+
+                        <div class="card">
+                            <div class="row g-0 align-items-center">
+                              <div class="col-md-3">
+                                <img src="assets/plant-hub.png" class="img-fluid rounded-start" alt="screenshot of an app prototype">
+                              </div>
+                              <div class="col-md-9">
+                                <div class="card-body">
+                                    <h3>PlantHub</h3>
+                                    <p class="card-text">A mobile app where users can gather plant information, talk to other users for advice, and track their plant care plan.</p>
+                                </div>   
+                                <div class="row justify-content-start skill-group">                                    
+                                  <div class="skill col-md-auto"><p>Figma</p><div class="circle"></div><div class="edge"></div></div>
+                                  <div class="skill col-md-auto"><p>Wireframing</p><div class="circle"></div><div class="edge"></div></div>
+                                  <div class="skill col-md-auto"><p>Lo-Fi &amp; Hi-Fi</p><div class="circle"></div><div class="edge"></div></div>
+                                  <div class="skill col-md-auto"><p>Personas</p><div class="circle"></div><div class="edge"></div></div>
+                                  <div class="skill col-md-auto"><p>Interactive</p><div class="circle"></div><div class="edge"></div></div>
+                              </div>                     
+                              </div>
+                            </div>
+                          </div>
+                    </a>
+                    <a href="https://www.figma.com/file/vdQnoote5gQySL7vYhgty6/iOS-Prototype?node-id=0%3A1&t=tmFvKotJGBPiGs28-1" class="card-link d-flex justify-content-center">
+                        <div class="card">
+                            <div class="row g-0 align-items-center">
+                              <div class="col-md-3">
                                 <img src="assets/ios-animal-crossing.png" class="img-fluid rounded-start" alt="screenshot of an app prototype">
                               </div>
-                              <div class="col-md-8">
+                              <div class="col-md-9">
                                 <div class="card-body">
                                     <h3>Animal Crossing iOS App</h3>
                                     <p class="card-text">An iOS phone and tablet app where users can view Animal Crossing villager information, track villager information, and play a BINGO game.</p>
                                 </div>
-                                <!-- <ul class="list-group list-group-flush">
-                                    <li class="list-group-item">
-                                        <h4>Relevant Skills</h4>
-                                        <p>Prototyping with Photoshop, CSS, HTML5, JavaScript</p>
-                                    </li>
-                                </ul> -->
+                                <div class="row justify-content-start skill-group">                                    
+                                  <div class="skill col-md-auto"><p>Figma</p><div class="circle"></div><div class="edge"></div></div>
+                                  <div class="skill col-md-auto"><p>Hi-Fi</p><div class="circle"></div><div class="edge"></div></div>
+                                  <div class="skill col-md-auto"><p>Tablet &amp; Phone</p><div class="circle"></div><div class="edge"></div></div>
+                                  <div class="skill col-md-auto"><p>Interactive</p><div class="circle"></div><div class="edge"></div></div>
+
+                              </div>                                
                               </div>
                             </div>
                           </div>
                     </a>
-                    <a href="https://www.figma.com/file/N4PkxhTDp68I6lT4MG1UV1/Capstone-Prototype?node-id=1%3A10&t=tmFvKotJGBPiGs28-1" class="card-link">
-                        <div class="card mb-3" style="max-width: 700px;">
-                            <div class="row g-0">
-                              <div class="col-md-4">
+                    <a href="https://www.figma.com/file/N4PkxhTDp68I6lT4MG1UV1/Capstone-Prototype?node-id=1%3A10&t=tmFvKotJGBPiGs28-1" class="card-link d-flex justify-content-center">
+                        <div class="card">
+                            <div class="row g-0 align-items-center">
+                              <div class="col-md-3">
                                 <img src="assets/love-equals-true.png" class="img-fluid rounded-start" alt="screenshot of a game prototype">
                               </div>
-                              <div class="col-md-8">
+                              <div class="col-md-9">
                                 <div class="card-body">
                                     <h3>Love = true</h3>
                                     <p class="card-text">A visual novel video game where users can talk to characters and play minigames.</p>
-                                </div>
-                                <!-- <ul class="list-group list-group-flush">
-                                    <li class="list-group-item">
-                                        <h4>Relevant Skills</h4>
-                                        <p>Prototyping with Photoshop, CSS, HTML5, JavaScript</p>
-                                    </li>
-                                </ul> -->
+                                </div>        
+                                <div class="row justify-content-start skill-group">                                    
+                                  <div class="skill col-md-auto"><p>Figma</p><div class="circle"></div><div class="edge"></div></div>
+                                  <div class="skill col-md-auto"><p>Game UI</p><div class="circle"></div><div class="edge"></div></div>
+                                  <div class="skill col-md-auto"><p>Hi-Fi</p><div class="circle"></div><div class="edge"></div></div>
+                              </div>                        
                               </div>
                             </div>
                           </div>
                     </a>
+
+                    <a href="scweb.html" class="card-link d-flex justify-content-center">
+                      <div class="card">
+                          <div class="row g-0 align-items-center">
+                            <div class="col-md-3">
+                              <img src="assets/scweb.png" class="img-fluid rounded-start" alt="screenshot of a website prototype">
+                            </div>
+                            <div class="col-md-9">
+                              <div class="card-body">
+                                  <h3>St. Clair MAD Program Site</h3>
+                                  <p class="card-text">A website built for the mobile applications development program at St. Clair College using pure CSS and JavaScript.</p>
+                              </div>        
+                              <div class="row justify-content-start skill-group">                                    
+                                <div class="skill col-md-auto"><p>Adobe Photoshop</p><div class="circle"></div><div class="edge"></div></div>
+                                <div class="skill col-md-auto"><p>Adobe Illustrator</p><div class="circle"></div><div class="edge"></div></div>
+                                <div class="skill col-md-auto"><p>Hi-Fi</p><div class="circle"></div><div class="edge"></div></div>
+                            </div>                        
+                            </div>
+                          </div>
+                        </div>
+                  </a>
                 </div>
-            </div>           
-        </div>
+            </div>
     </section>
 
     <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4">
@@ -325,7 +431,8 @@
                 <img src="assets/linkedin-logo.png" alt="LinkedIn Logo" class="footer-img">
             </a>
         </div>
-        <p class="col-md-12 mb-0 text-center">&copy; 2022 Ashley McCallum</p>
+        <p class="col-md-12 mb-0 text-center">&copy; 2023 Ashley McCallum</p>
     </footer>
+    </div>
 </body>
 </html>
