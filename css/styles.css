@@ -2,6 +2,50 @@ body {
     color: #1c1c1c;
     font-family: 'Montserrat', sans-serif;
     font-size: 0.9em;
+    /* background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-blend-mode: multiply;
+    background-color: aliceblue; */
+}
+
+.body-bg {
+    height: 100%;
+    width: 100%;
+    /* background-image: url(background.gif);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-blend-mode: darken; */
+    /* background-color: aliceblue; */
+}
+
+.body-bg-img {
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -100;
+    opacity: 25%;
+    filter: blur(5px) hue-rotate(100deg);
+    
+}
+
+.scweb {
+    margin: 2em;
+    /* width: 100%; */
+}
+
+
+.scweb h1 {
+    margin: 1em;
+}
+
+.scweb img {
+    width: 500px;
+    height: 500px;
+    border: 0.5em solid black;
+    object-fit: cover;
+    margin: 2em;
 }
 
 header img {
@@ -19,15 +63,32 @@ header p {
 }
 
 #resumeOffcanvas {
+    /* color: white; */
     padding-left: 1em;
     position: fixed;
     top: 50px;
     height: 225px;
     width: 200px;
-    background-color: grey;
+    background-color: white;
+    border-color: white;
     border-top-left-radius: 2em;
     border-bottom-left-radius: 2em;
-    box-shadow: -5px 5px lightblue, 5px 5px lightblue;
+    box-shadow: -5px 5px #fa93ca, 5px 5px #fa93ca;
+}
+
+#resumeOffcanvas img {
+    filter: invert(100%);
+}
+
+.contact-bg {
+    background-color: #ffd4eb;
+    border-radius: 10%;
+    height: 65%; 
+    width: 80%; 
+    position: absolute;
+    top: 25%;
+    right: 10%;
+    z-index: -100;
 }
 
 .contact-btn {
@@ -39,8 +100,7 @@ header p {
     border-bottom-left-radius: 5em;
     border-top-right-radius: 0em;
     border-bottom-right-radius: 0em;
-    box-shadow: -5px 5px lightblue, 5px 5px lightblue;
-}
+    box-shadow: -5px 5px #fa93ca, 5px 5px #fa93ca;}
 
 .resume-btn {
     padding: 0.5em 1em !important;
@@ -53,7 +113,7 @@ header p {
     border-bottom-right-radius: 5em;
     border-top-left-radius: 0em;
     border-bottom-left-radius: 0em;
-    box-shadow: -5px 5px lightblue, 5px 5px lightblue;
+    box-shadow: -5px 5px #fa93ca, 5px 5px #fa93ca;
     position: fixed;
     top: 50px;
     left: 0;
@@ -80,18 +140,22 @@ nav a {
     border: none;
 }
 
-.about-list ul.list-group {
+.nav-link.active {
+    background-color: transparent !important;
+}
+
+/* .about-list ul.list-group {
     /* background-color: #c7beaf; */
     /* --bs-list-group-bg: #c7beaf; */
-}
+/* } */
 
 .list-group-item {
     border: none;
 }
 
-.mb-3 {
+/* .mb-3 {
     margin-bottom: 0!important;
-}
+} */
 
 .nav-tabs .nav-link.active {
     color: black;
@@ -99,12 +163,13 @@ nav a {
 }
 
 .skill {
+    color: white;
     padding: 0.5em 2em;
     margin: 1em;
     border: 1px solid black;
     border-radius: 0.5em;
     position: relative;
-    background-color: #d9d6ce;
+    background-color: black;
 }
 
 .skill div.circle {
@@ -130,11 +195,16 @@ nav a {
 
 .skill p {
     margin-bottom: 0;
+    color: white !important;
 }
 
 .skill-group {
     margin-bottom: 3em;
 }
+
+/* .skill:hover {
+    color: white !important;
+} */
 
 .about-info {
     margin-top: 5em;
@@ -155,10 +225,19 @@ nav a {
     color: #1c1c1c;    
 }
 
+.tab-content>.active {
+    width: 100%;
+}
+/* .tab-pane:not(.active) {
+    display: block;
+    height: 0;
+    overflow-y: hidden;
+} */
+
 .card-link {
     text-decoration: none;
     color: #1c1c1c;
-    margin-bottom: 2em;
+    /* margin-bottom: 2em; */
 }
 
 .card-link:hover, .card-link:hover p {
@@ -166,25 +245,31 @@ nav a {
 }
 
 .card {
-    margin: auto 2em 1em;
+    margin: 1em 1em 3em 1em;
     border-radius: 0em;
+    border: none;
+    width: 75%;
+    background-color: transparent;
 }
 
 .card img {
-    height: 200px;
-    width: 200px;
+    height: 300px;
+    width: 300px;
     object-fit: cover;
     border-top-left-radius: 2em !important;
     border-bottom-right-radius: 2em;
     border: 0.5em solid black;
+
+    /* margin-right: 2em; */
 }
 
-#nav-projects div+h2 {
-    margin-top: 3em;
+.card-body {
+    padding-left: 0em;
 }
 
 .tab-content {
     padding: 4em;
+    /* justify-content: center; */
 }
 
 h3 {
@@ -227,7 +312,7 @@ footer {
     margin: auto 1em 1em 1em;
 }
 
-@keyframes bouncing {
+/* @keyframes bouncing {
     from, 20%, 53%, 80%, to {
       animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
       transform: translate3d(0,0,0);
@@ -254,9 +339,9 @@ footer {
     animation-iteration-count: infinite;
     font-size: 1.5em;
     padding-top: 2em;
-  }
+  } */
 
-  @media screen and (max-width: 1720px) {
+  /* @media screen and (max-width: 1720px) {
     .card {
         margin-bottom: 3em!important;
     }
@@ -270,4 +355,4 @@ footer {
         .row {
             display: block;
         }
-  }
+  } */
